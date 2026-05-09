@@ -40,8 +40,8 @@ dev = ["pytest>=8", "ruff>=0.4"]
 swapmic = "swapmic.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/Prinze369/SwapMic"
-Issues = "https://github.com/Prinze369/SwapMic/issues"
+Homepage = "https://github.com/ingenuousmorpheus/SwapMic"
+Issues = "https://github.com/ingenuousmorpheus/SwapMic/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
