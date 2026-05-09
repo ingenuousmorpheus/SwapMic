@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SwapMic-specific: never commit audio, models, or generated output
+output/
+models/
+*.wav
+*.mp3
+*.flac
+*.aiff
+*.m4a
+*.pth
+*.index
+
+# Allow assets directory wholesale (icons, banners) even though .svg-adjacent
+!assets/**
+
+# Logs / temp
+*.log
+.pytest_cache/
+.ruff_cache/
+.coverage

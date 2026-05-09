@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" role="img" aria-label="SwapMic banner">
+  <title>SwapMic — Your voice, on every song.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#050203"/>
+      <stop offset="55%" stop-color="#0d0407"/>
+      <stop offset="100%" stop-color="#1a060a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#ff2a3d" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ff2a3d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff2a3d"/>
+      <stop offset="100%" stop-color="#8a0010"/>
+    </linearGradient>
+    <linearGradient id="mic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#cfd0d4"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffd6db"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff2a3d" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff2a3d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff2a3d" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#glow)"/>
+
+  <!-- Logo block -->
+  <g transform="translate(60 60)">
+    <rect width="240" height="240" rx="48" fill="#070205" stroke="#1a0608" stroke-width="2"/>
+    <g transform="translate(120 120)">
+      <g stroke="url(#ring)" stroke-width="7" fill="none" stroke-linecap="round">
+        <path d="M 0 -78 A 78 78 0 0 1 71.5 -32"/>
+        <path d="M 0 78 A 78 78 0 0 1 -71.5 32"/>
+      </g>
+      <g fill="#ff2a3d">
+        <path d="M 71.5 -32 l -6 -17 l 18 6 z"/>
+        <path d="M -71.5 32 l 6 17 l -18 -6 z"/>
+      </g>
+      <!-- mic -->
+      <rect x="-22" y="-52" width="44" height="72" rx="22" fill="url(#mic)"/>
+      <g stroke="#1a0608" stroke-width="1.5" opacity="0.65">
+        <line x1="-16" y1="-36" x2="16" y2="-36"/>
+        <line x1="-16" y1="-26" x2="16" y2="-26"/>
+        <line x1="-16" y1="-16" x2="16" y2="-16"/>
+        <line x1="-16" y1="-6"  x2="16" y2="-6"/>
+        <line x1="-16" y1="4"   x2="16" y2="4"/>
+      </g>
+      <path d="M -36 10 A 36 36 0 0 0 36 10" fill="none" stroke="url(#mic)" stroke-width="5" stroke-linecap="round"/>
+      <rect x="-3" y="42" width="6" height="18" fill="url(#mic)"/>
+      <rect x="-22" y="58" width="44" height="5" rx="2.5" fill="url(#mic)"/>
+    </g>
+  </g>
+
+  <!-- Wordmark + tagline -->
+  <g transform="translate(340 0)">
+    <text x="0" y="170" font-family="Inter, Helvetica, Arial, sans-serif" font-size="124"
+          font-weight="800" fill="url(#word)" letter-spacing="-3">SwapMic</text>
+    <text x="6" y="220" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28"
+          font-weight="500" fill="#cfd0d4" letter-spacing="1.5">Your voice. On every song.</text>
+    <text x="6" y="258" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18"
+          font-weight="500" fill="#ff7a86" letter-spacing="3">DEMUCS · RVC · WAV-NATIVE</text>
+  </g>
+
+  <!-- Subtle waveform along the bottom -->
+  <g transform="translate(0 320)" opacity="0.85">
+    <path d="M 0 0
+             Q 80 -22 160 0 T 320 0 T 480 0 T 640 0 T 800 0 T 960 0 T 1120 0 T 1280 0"
+          fill="none" stroke="url(#wave)" stroke-width="2.5"/>
+    <path d="M 0 8
+             Q 80 -10 160 8 T 320 8 T 480 8 T 640 8 T 800 8 T 960 8 T 1120 8 T 1280 8"
+          fill="none" stroke="url(#wave)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- 3·6·9 corner sigil -->
+  <text x="1240" y="340" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="14" font-weight="700" fill="#ff2a3d" opacity="0.55" letter-spacing="4">3·6·9</text>
+</svg>

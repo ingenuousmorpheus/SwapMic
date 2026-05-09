@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swapmic"
+version = "0.1.0"
+description = "Swap the lead vocal of any song with your own voice. Demucs + RVC, WAV-native."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Prinze" }]
+keywords = ["audio", "voice-conversion", "rvc", "demucs", "vocal-swap", "music"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Sound/Audio :: Conversion",
+]
+dependencies = [
+  "demucs>=4.0.1",
+  "torch>=2.1",
+  "numpy>=1.24",
+  "soundfile>=0.12",
+  "soxr>=0.3",
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "python-multipart>=0.0.9",
+]
+
+[project.optional-dependencies]
+rvc = ["rvc-python>=0.1.6"]
+dev = ["pytest>=8", "ruff>=0.4"]
+
+[project.scripts]
+swapmic = "swapmic.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Prinze369/SwapMic"
+Issues = "https://github.com/Prinze369/SwapMic/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
